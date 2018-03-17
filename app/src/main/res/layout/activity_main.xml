@@ -1,0 +1,358 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/oScrollView"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/child_of_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                style="@style/movieImageStyle"
+                android:src="@drawable/guardians_of_the_galaxy_250" />
+
+            <TextView
+                style="@style/movieTitleStyle"
+                android:text="@string/guardians_of_the_galaxy" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:background="@drawable/layout_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/questionStyle"
+                    android:text="@string/m1q1_string" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/m1q1a1"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/marvel_studios" />
+
+                    <CheckBox
+                        android:id="@+id/m1q1a2"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/walt_disney_studio_motion_pictures" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/m1q1a3"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/dc_comics" />
+
+                    <CheckBox
+                        android:id="@+id/m1q1a4"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/warner_bros_interactive_entertainment" />
+
+                </LinearLayout>
+
+                <View style="@style/questionSeparatorLine" />
+
+                <TextView
+                    style="@style/questionStyle"
+                    android:text="@string/m1q2_string" />
+
+                <View
+                    android:id="@+id/focus_thief"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <EditText
+                    android:id="@+id/m1q2a1"
+                    style="@style/editTextField"
+                    android:hint="@string/device_name_field"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:backgroundTint="@android:color/holo_red_light" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/movieImageStyle"
+            android:src="@drawable/twilight_250" />
+
+        <TextView
+            style="@style/movieTitleStyle"
+            android:text="@string/twilight" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@drawable/layout_bg"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/questionStyle"
+                android:text="@string/m2q1_string" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radio_group1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/m2q1a1"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/chris_pratt" />
+
+                    <RadioButton
+                        android:id="@+id/m2q1a2"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/taylor_lautner" />
+
+                    <RadioButton
+                        android:id="@+id/m2q1a3"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/robert_pattinson" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View style="@style/questionSeparatorLine" />
+
+            <TextView
+                style="@style/questionStyle"
+                android:text="@string/m2q2_string" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radio_group2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/m2q2a1"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Stephenie Meyer" />
+
+                    <RadioButton
+                        android:id="@+id/m2q2a2"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Suzanne Collins" />
+
+                    <RadioButton
+                        android:id="@+id/m2q2a3"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:text="J. K. Rowling" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/movieSeparator_line" />
+
+        <TextView
+            style="@style/movieTitleStyle"
+            android:text="@string/frozen" />
+
+        <ImageView
+            style="@style/movieImageStyle"
+            android:src="@drawable/frozen_250" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/layout_bg"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/questionStyle"
+                android:text="@string/m3q1_string" />
+
+            <RadioGroup
+                android:id="@+id/radio_group3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/m3q1a1"
+                    style="@style/buttonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/frosty" />
+
+                <RadioButton
+                    android:id="@+id/m3q1a2"
+                    style="@style/buttonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/olaf" />
+
+                <RadioButton
+                    android:id="@+id/m3q1a3"
+                    style="@style/buttonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/sven" />
+
+            </RadioGroup>
+
+            <View style="@style/questionSeparatorLine" />
+
+            <TextView
+                style="@style/questionStyle"
+                android:text="@string/m3q2_string" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/m3q2a1"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/king_agnarr" />
+
+                    <CheckBox
+                        android:id="@+id/m3q2a2"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/kristoff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/m3q2a3"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/queen_iduna" />
+
+                    <CheckBox
+                        android:id="@+id/m3q2a4"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/anna" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/result_button"
+                android:onClick="submitResults"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="32dp"
+                android:text="@string/quizz_result" />
+
+            <Button
+                android:id="@+id/reset_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/try_again"
+                android:onClick="resetResults"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
