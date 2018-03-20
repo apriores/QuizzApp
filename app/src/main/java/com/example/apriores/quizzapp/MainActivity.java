@@ -58,12 +58,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onWindowFocusChanged (boolean hasFocus)
-    {
+    public void onWindowFocusChanged(boolean hasFocus) {
         LinearLayout child_of_scrollView = (LinearLayout) findViewById(R.id.child_of_scrollView);
         ScrollView oScrollView = (ScrollView) findViewById(R.id.oScrollView);
 
-        if(child_of_scrollView.getMeasuredHeight() > oScrollView.getMeasuredHeight());
+        if (child_of_scrollView.getMeasuredHeight() > oScrollView.getMeasuredHeight()) ;
         //Show some arrow image or something you like to show
     }
 
@@ -137,27 +136,28 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * This method displays result as a toast when QUIZZ RESULT button is pressed
+     *
      * @param view
      */
-    public void submitResults (View view){
+    public void submitResults(View view) {
         Context context = getApplicationContext();
 
-        String text = getString(R.string.answerCorrect)+ " " + calculateScore() +" ";
-        if (calculateScore() == 1){
-            text+=getString(R.string.question) + " " + getString(R.string.ofMaxQuestions);
-        }else if (calculateScore() == 6){
+        String text = getString(R.string.answerCorrect) + " " + calculateScore() + " ";
+        if (calculateScore() == 1) {
+            text += getString(R.string.question) + " " + getString(R.string.ofMaxQuestions);
+        } else if (calculateScore() == 6) {
             text = getString(R.string.congratulations_quizz);
-        }else text+=getString(R.string.questions) + " " + getString(R.string.ofMaxQuestions);
+        } else text += getString(R.string.questions) + " " + getString(R.string.ofMaxQuestions);
 
         int duration = Toast.LENGTH_SHORT;
-        Toast toast = Toast.makeText(context,text,duration);
+        Toast toast = Toast.makeText(context, text, duration);
         toast.show();
     }
 
     /*
     /This method clears all checked buttons
      */
-    public void resetResults (View view){
+    public void resetResults(View view) {
 
         CheckBox checkBox1 = (CheckBox) findViewById(R.id.m1q1a1);
         checkBox1.setChecked(false);
