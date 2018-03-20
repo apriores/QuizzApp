@@ -4,26 +4,26 @@
     <string name="m1q1_string">The movie was published and distributed by:</string>
     <string name="m1q2_string">What type of portable player was used to play \"Awesome Mix Vol. 1\"?</string>
     <string name="device_name_field">Write the device name here&#8230;</string>
-    <string name="marvel_studios">Marvel Studios</string>
-    <string name="walt_disney_studio_motion_pictures">Walt Disney Studio Motion Pictures</string>
-    <string name="warner_bros_interactive_entertainment">Warner Bros. Interactive Entertainment</string>
-    <string name="dc_comics">DC Comics</string>
+    <string name="marvel_studios" translatable="false">Marvel Studios</string>
+    <string name="walt_disney_studio_motion_pictures" translatable="false">Walt Disney Studio Motion Pictures</string>
+    <string name="warner_bros_interactive_entertainment" translatable="false">Warner Bros. Interactive Entertainment</string>
+    <string name="dc_comics" translatable="false">DC Comics</string>
     <string name="twilight">Twilight</string>
     <string name="m2q1_string">Which actor played Edward\'s role?</string>
-    <string name="chris_pratt">Chris Pratt</string>
-    <string name="taylor_lautner">Taylor Lautner</string>
-    <string name="robert_pattinson">Robert Pattinson</string>
+    <string name="chris_pratt" translatable="false">Chris Pratt</string>
+    <string name="taylor_lautner" translatable="false">Taylor Lautner</string>
+    <string name="robert_pattinson" translatable="false">Robert Pattinson</string>
     <string name="m2q2_string">Who wrote the \"Twilight\" novel?</string>
     <string name="frozen">Frozen</string>
     <string name="m3q1_string">What is the name of snowman character?</string>
-    <string name="frosty">Frosty</string>
-    <string name="sven">Sven</string>
-    <string name="olaf">Olaf</string>
+    <string name="frosty" translatable="false">Frosty</string>
+    <string name="sven" translatable="false">Sven</string>
+    <string name="olaf" translatable="false">Olaf</string>
     <string name="m3q2_string">Who is related to Elsa?</string>
     <string name="king_agnarr">King Agnarr</string>
-    <string name="kristoff">Kristoff</string>
+    <string name="kristoff" translatable="false">Kristoff</string>
     <string name="queen_iduna">Queen Iduna</string>
-    <string name="anna">Anna</string>
+    <string name="anna" translatable="false">Anna</string>
     <string name="quizz_result">Quizz Result</string>
     <string name="try_again">Try Again</string>
     <string name="walkman">walkman</string>
